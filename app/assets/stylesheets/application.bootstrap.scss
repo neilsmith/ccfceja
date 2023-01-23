@@ -56,8 +56,8 @@
 $title-font: Fira sans;
 $body-font: Fira sans;
 $transition: all 0.3s ease 0s;
-$primary-color: #fbc02d;
-$secondary-color: #214790;
+$primary-color: #CC9966;
+$secondary-color: #73022C;
 $hover-color: #101010;
 $title-color: #111111;
 $white-color: #ffffff;
@@ -80,6 +80,11 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   line-height: 26px;
+}
+
+#rs-header h1 {
+  color: $primary-color;
+  margin-top: 0.5em;
 }
 
 img {
@@ -1126,7 +1131,7 @@ blockquote {
         position: relative;
 
         img {
-          max-width: 182px;
+          max-width: 142px;
           margin: 0;
           max-height: 100%;
           transition: $transition !important;
