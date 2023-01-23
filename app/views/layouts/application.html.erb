@@ -99,12 +99,11 @@
                                             <!-- Teams Menu Start -->
                                             <li class="current_page_item menu-item-has-children"><a href="#">Teams</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="sponsors.html">U13</a></li>
-                                                    <li><a href="match-fixtures.html">U14</a></li>
-                                                    <li><a href="first-team.html">U15</a></li>
-                                                    <li><a href="club-ranking.html">U16</a></li>
-                                                    <li><a href="gallery.html">U17</a></li>
-                                                    <li class="last-item"><a href="my-account.html">U18</a></li>
+                                                    <% Team.all.each do |t| %>
+                                                        <li>
+                                                            <%= link_to t.name, t %>
+                                                        </li>
+                                                    <% end %>
                                                 </ul>
                                             </li>
                                             <!-- Teams Menu End -->
